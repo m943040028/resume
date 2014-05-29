@@ -1,0 +1,199 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy CV/Resume
+% XeLaTeX Template
+% Version 1.0 (5/5/2014)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Debarghya Das (http://www.debarghyadas.com)
+% With extensive modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[letterpaper]{deedy-resume} % Use US Letter paper, change to a4paper for A4 
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\lastupdated % Print the Last Updated text at the top right
+
+\namesection{Sheng-Yu}{Chiu}{ % Your name
+\urlstyle{same}\url{http://github.com/m943040028} \\ % Your website, LinkedIn profile or other web address
+\href{mailto:m943040028@gmail.com}{m943040028@gmail.com} % Your contact information
+}
+
+%----------------------------------------------------------------------------------------
+%	LEFT COLUMN
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
+
+\section{Education}
+
+\subsection{Sun Yat-Sen University}
+
+\descript{MS in Computer Science}
+\location{2005-2007}
+
+%------------------------------------------------
+
+\subsection{I-Shou University}
+
+\descript{BS in Computer Science}
+\location{2002-2005}
+
+\sectionspace % Some whitespace after the section
+
+\section{Links} 
+
+Github:// \href{https://github.com/m943040028}{\bf m943040028} \\
+LinkedIn:// \href{http://lnkd.in/Exzyne}{\bf sy.chiu} \\
+
+\sectionspace % Some whitespace after the section
+
+\section{Skills}
+
+\subsection{Software Development}
+Scrum \textbullet{} Continuous Integration \textbullet{} \\
+Test Driven Development \textbullet{} Design Patterns
+
+\subsection{Embedded Software}
+Linux Kernel \textbullet{} MicroKernel Design \textbullet{} \\
+Device Drivers \textbullet{} Hyperviosr \textbullet{} \\
+BootLoader \textbullet{}
+
+\subsection{OpenSource Tools}
+STL \textbullet{} Boost \textbullet SQLAlchemy \textbullet \\
+BaseX \textbullet{} Strace \textbullet{} Valgrind
+
+\subsection{Architecture}
+X86 \textbullet{} IBM Power \textbullet{} Arm(v5,v7)
+
+\subsection{Version Control}
+git \textbullet{} gerrit
+
+\subsection{Programming}
+\location{Experienced:}
+C \textbullet{} C++ \textbullet{} Assembly \textbullet{} Java \textbullet{} Python
+\location{Familiar:}
+Shell \textbullet{} Android \textbullet{} SQLite \textbullet XQuery
+
+\sectionspace % Some whitespace after the section
+
+\section{Personal Project} 
+
+\subsection{\href{https://github.com/m943040028/prex}{\bf Prex}}
+\descript{Real-time MicroKernel for PPC}
+
+\sectionspace % Some whitespace after the section
+
+%----------------------------------------------------------------------------------------
+
+\end{minipage} % The end of the left column
+\hfill
+%
+%----------------------------------------------------------------------------------------
+%	RIGHT COLUMN
+%----------------------------------------------------------------------------------------
+%
+\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+
+\section{Experience}
+
+\runsubsection{MediaTek}
+\descript{| Senior Software Engineer}
+
+\location{Apl 2014 – Current | Hsintsu, Taiwan}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightitemize}
+\item Linaro Assignee, focused on secure environment system software development on arm.
+\end{tightitemize}
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+
+\runsubsection{International Business Machines (IBM)}
+\descript{| Staff Software Engineer}
+
+\location{Apl 2013 – Mar 2013 | Taipei, Taiwan}
+\begin{tightitemize}
+\item Working with IBM’s next-gen CPU simulator using Java. Focused on MMU translation which is a very important module in processor core.
+\item Refactored a data-driven system modeling software within 3 month (using python, sqlalchemy and xquery). Acting as key developer who defines new software architecture that eliminated thousand lines of duplicated code, easier to add new feature and new platform.
+\item Building continuous-integration environment by integrating Jenkins/Gradle.
+\item Reduced software developers’ time to do software integration from a hour to several minutes by writing a tool that integrated IBM cmvc and git.
+\end{tightitemize}
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+
+\runsubsection{High-Tech Corporation (HTC)}
+\descript{| Senior Software Engineer}
+
+\location{Mar 2012 – Mar 2013 | Taipei, Taiwan}
+\begin{tightitemize}
+\item Working in a small (5 people) team whose mission is to deliver a software stack that enabled our android phone product to extend secondary display to TV through wireless-link, and provided android compatible API that enabled our user to write dual-screen applications. Delivered components in native framework level.
+\end{tightitemize}
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+
+\runsubsection{High-Tech Corporation (HTC)}
+\descript{| Principal Software Engineer}
+
+\location{Aug 2007 – Jan 2012 |Hsintsu, Taiwan}
+\begin{tightitemize}
+\item Linux Device driver development, integration and debugging. Focused on graphics, video/audio, usb, ethernet, flash based storage and i2c device drivers.
+\item Co-work with hardware engineer to do new platform bring-up.
+\item Developed Linux snapshot boot (conjunction with bootloader) which reduces system boot time by 70\%.
+\item Implemented m2ts streaming program on an Android based set-top box. Enabled zero-copy decoding by integrating VLC MultiMedia framework with Ti Omap4 hardware codec and video pipelines hardware.
+\item Porting Real time operating system to a PowerPC 405 based platform.
+\end{tightitemize}
+
+\sectionspace % Some whitespace after the section
+
+%\section{Awards} 
+
+%\begin{tabular}{rll}
+%2007 & Phi Tau Phi Scholastic Honor Society NSYSU
+%\end{tabular}
+
+\end{minipage} % The end of the right column
+
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
+\end{minipage}
+\hfill
+
+%\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+%\section{HighLight}
+
+%\begin{tightitemize}
+%\item As a member of small, fast-paced and agile team, whose member came from Taiwan, India and America.
+%\item Having experiences in scrum, continuous integration and test-driven development.
+%\item I’m on my way to become Clean Coder. (I’m a fan of uncle Bob)
+%\item Familiar with x86, power(server) and arm(v5,v7) architecture.
+%\item Experienced in Low Level Firmware design and implementation.
+%\item Expertise to Linux Kernel and Device Driver development.
+%\item Knowledge to MicroKernel-based kernel/hypervisor design, such as minix, l4ka, nova.
+%\item Android native framework development experience. (multimedia and display)
+%\end{tightitemize}
+
+%\end{minipage} % The end of the left column
+
+\end{document}
