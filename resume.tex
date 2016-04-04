@@ -19,7 +19,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[letterpaper]{deedy-resume} % Use US Letter paper, change to a4paper for A4 
+\documentclass[a4paper]{deedy-resume} % Use US Letter paper, change to a4paper for A4 
 
 \begin{document}
 
@@ -30,7 +30,7 @@
 \lastupdated % Print the Last Updated text at the top right
 
 \namesection{Sheng-Yu}{Chiu}{ % Your name
-\urlstyle{same}\url{http://github.com/m943040028} \\ % Your website, LinkedIn profile or other web address
+%\urlstyle{same}\url{http://github.com/m943040028} \\ % Your website, LinkedIn profile or other web address
 \href{mailto:m943040028@gmail.com}{m943040028@gmail.com} % Your contact information
 }
 
@@ -48,17 +48,19 @@ Test Driven Development \textbullet{} \\
 Design Patterns
 
 \subsection{Embedded Software}
-Linux Kernel \textbullet{} MicroKernel Design \textbullet{} \\
-Device Drivers \textbullet{} Hyperviosr \textbullet{} \\
-BootLoader
+Linux Kernel \textbullet{} MicroKernels \textbullet{} \\
+Device Drivers \textbullet{} Hyperviosrs \textbullet{} \\
+Secure Monitor \textbullet{} TEE
 
 \subsection{OpenSource Tools}
-STL \textbullet{} Boost \textbullet SQLAlchemy \textbullet \\
-BaseX \textbullet{} Strace \textbullet{} Valgrind \textbullet{} \\
+Boost \textbullet SQLAlchemy \textbullet BaseX \textbullet{} \\
+Strace \textbullet GDB \textbullet{} QEMU \textbullet{} \\
 Gradle \textbullet{} Jenkins
 
-\subsection{Architecture}
-X86 \textbullet{} IBM Power \textbullet{} Arm(v5,v7)
+\subsection{Computer Architecture}
+X86 \textbullet{} IBM Power \textbullet{} ARMv7 \textbullet{} \\
+ARMv8 \textbullet{} ARM Security Extension \textbullet{} \\
+ARM Virtualization Extension \\
 
 \subsection{Version Control}
 git \textbullet{} gerrit \textbullet{} repo
@@ -72,10 +74,10 @@ XQuery \textbullet{} Groovy
 
 \sectionspace % Some whitespace after the section
 
-\section{Personal Project} 
+\section{Community Project} 
 
-\subsection{\href{https://github.com/m943040028/prex}{\bf Prex}}
-\descript{Real-time MicroKernel for PPC}
+\subsection{\href{https://github.com/OP-TEE}{\bf OP-TEE}}
+\descript{Open-Source TEE by Linaro}
 
 \sectionspace % Some whitespace after the section
 
@@ -119,21 +121,25 @@ LinkedIn:// \href{http://lnkd.in/Exzyne}{\bf sy.chiu} \\
 \item \bf Ability to define software architecture independently
 \item \bf Skilled in system software design and operating system kernel
 \item \bf Understanding the internal of computer architecture simulators
+\item \bf Familiar with ARM Cortex-A Architecture
 \item \bf Familiar with Agile programming and Continuous Integration
 \item \bf Experienced in software refactoring
-\item \bf Familiar with Arm Architecture
 \item \bf Solid understanding of C programming language
 \end{tightitemize}
 
 \section{Experience}
 
 \runsubsection{MediaTek}
-\descript{| Senior Software Engineer}
+\descript{| Linaro Assignee Security Working Group}
 
 \location{Apl 2014 – Present | Hsintsu, Taiwan}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightitemize}
-\item Linaro Assignee, focused on secure environment system software development on arm.
+\item Implemented GlobalPlatform Secure Element API (SE API) v1.0.
+\item Keymaster TA implementation and integration with Android keystore.
+\item Secure Storage implementation which supports atomic operations.
+\item Created a convenient OP-TEE development environment based on MT8173 Evaluation Board.
+\item Hosted a session at Linaro Connect SFO'15 for Secure Storage implementation on OP-TEE.
 \end{tightitemize}
 
 \sectionspace % Some whitespace after the section
@@ -185,9 +191,9 @@ LinkedIn:// \href{http://lnkd.in/Exzyne}{\bf sy.chiu} \\
 
 %----------------------------------------------------------------------------------------
 
-\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
-\end{minipage}
-\hfill
+%\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
+%\end{minipage}
+%\hfill
 
 %\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
 %\section{HighLight}
